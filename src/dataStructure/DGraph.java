@@ -1,9 +1,13 @@
 package dataStructure;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 
 public class DGraph implements graph{
-
+	
+	private HashMap<Integer, node_data> nodes=new HashMap<>();
+	private HashMap<Integer, ArrayList<edge_data> > edges=new HashMap<>();
 	@Override
 	public node_data getNode(int key) {
 		// TODO Auto-generated method stub
@@ -18,8 +22,14 @@ public class DGraph implements graph{
 
 	@Override
 	public void addNode(node_data n) {
-		// TODO Auto-generated method stub
 		
+		this.nodes.put(n.getKey(),n );
+		
+	}
+
+	@Override
+	public String toString() {
+		return "DGraph [nodes=" + nodes + ", edges=" + edges + "]";
 	}
 
 	@Override
