@@ -1,16 +1,18 @@
-package dataStructure;
+package our_tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class NodeTest {
+import dataStructure.Edge;
+
+class EdgeTest {
 
 	@Test
-	void testNode() {
-		Node n=new Node ( 0);
-		
-		assertEquals("Node [key=0, location=null]",n.toString() );
+	void testEdge() {
+	Edge e=new Edge ( 0,1,4);
+	System.out.println(e.toString());
+		assertEquals("Edge [src=0, dest=1, weight=4]",e.toString() );
 	
 	}
 
@@ -20,28 +22,21 @@ class NodeTest {
 	}
 
 	@Test
-	void testGetKey() {
-		fail("Not yet implemented");
+	void testGetSrc() {
+		Edge e=new Edge ( 0,1,4);
+		assertEquals(0,e.getSrc() );
 	}
 
 	@Test
-	void testGetLocation() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetLocation() {
-		fail("Not yet implemented");
+	void testGetDest() {
+		Edge e=new Edge ( 0,1,4);
+		assertEquals(1,e.getDest() );
 	}
 
 	@Test
 	void testGetWeight() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetWeight() {
-		fail("Not yet implemented");
+		Edge e=new Edge ( 0,1,4);
+		assertEquals(4,e.getWeight() );
 	}
 
 	@Test

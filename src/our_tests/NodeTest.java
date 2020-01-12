@@ -1,26 +1,19 @@
-package dataStructure;
+package our_tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class DGraphTest {
+import dataStructure.Node;
+
+class NodeTest {
 
 	@Test
-	void testGetNode() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetEdge() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testAddNode() {
-		node_data n=new Node(0);
+	void testNode() {
+		Node n=new Node ( 0);
 		
-		fail("Not yet implemented");
+		assertEquals("Node [key=0, location=null]",n.toString() );
+	
 	}
 
 	@Test
@@ -29,42 +22,47 @@ class DGraphTest {
 	}
 
 	@Test
-	void testConnect() {
+	void testGetKey() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetV() {
+	void testGetLocation() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetE() {
+	void testSetLocation() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testRemoveNode() {
+	void testGetWeight() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testRemoveEdge() {
+	void testSetWeight() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testNodeSize() {
+	void testGetInfo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testEdgeSize() {
+	void testSetInfo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetMC() {
+	void testGetTag() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetTag() {
 		fail("Not yet implemented");
 	}
 

@@ -5,7 +5,10 @@ import utils.Point3D;
 public class Node implements node_data {
 	private int key;
 	private Point3D location;
-	//add all the object you need : weghit etz.
+	private double Weight;///maybe i need change to public or something
+	private String info;
+	private int tag;
+	//add all the object you need : weghit etc.
 	
 	public Node(int key) {
 		
@@ -31,44 +34,47 @@ public class Node implements node_data {
 
 	@Override
 	public void setLocation(Point3D p) {
-		// TODO Auto-generated method stub
-
+		
+		this.location=p;
 	}
 
 	@Override
 	public double getWeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		//i need think i to do that and when because its not 
+		// const value it change with change of src or with the pathe's i have to choose between 
+		return this.Weight;
 	}
 
 	@Override
 	public void setWeight(double w) {
-		// TODO Auto-generated method stub
-
+		//i need think i to do that and when because its not 
+				// const value it change with change of src or with the pathe's i have to choose between 
+		this.Weight=w;
 	}
 
 	@Override
 	public String getInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.info;
 	}
 
 	@Override
 	public void setInfo(String s) {
-		// TODO Auto-generated method stub
+		this.info=s;
 
 	}
 
 	@Override
-	public int getTag() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getTag() {//0 its not visit for dfs/bfs
+		                     //1 its not visit for dfs/bfs
+		return this.tag;
 	}
 
 	@Override
-	public void setTag(int t) {
-		// TODO Auto-generated method stub
-
+	public void setTag(int t) {//0 its not visit for dfs/bfs
+                                //1 its not visit for dfs/bfs
+		this.tag=t;
 	}
 
 }
